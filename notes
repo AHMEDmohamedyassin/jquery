@@ -1,0 +1,44 @@
+events : 
+ready
+click
+dblclick
+mouseenter
+mouseleave
+hover
+
+
+actions : 
+css({css style})   // applying inline css styles
+css(["width" , "height" , ...])  // getting css values for element
+hide(speed , callback)      // add display none inline style to element
+show(speed , callback)      // add display block inline style to element
+toggle(speed , callback)    // show X hide
+fadein(speed , callback)    // add display block inline style to element with opacity animation
+fadeout(speed , callback)    // add display none inline style to element with opacity animation
+fadeToggle(speed , callback) // fadein X fadeout
+fadeTo(speed , required opactiy , callback)
+slideDown (speed , callback)   // hidding element with slide
+slideUp (speed , callback)   // showing element with slide
+slideToggle (speed , callback)   // showing element with slide
+animate({ width : "hide", width : "show", width : "toggle" ,width : "+=100px",left:"100px"} , 1000)   // animations for same div done in sequence queue
+stop(clearQueue (boolean) , goto end style (boolean) )
+attr({attr:val})      // setting attribute
+attr("attr")         // getting attribute
+append
+prepend
+after
+before
+remove
+empty
+toggleClass
+addClass
+removeClass
+
+filters :
+$("p:eq(0)")
+$("p:contains(ahmed)")
+$("p:first")
+$("p:last")
+$("p:focus")
+$("p:empty")
+$("p:has")

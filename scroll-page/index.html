@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../lib/tailwind.css" rel="stylesheet" />
+    <script defer src="../lib/jquery.js"></script>
+    <script defer src="./script.js"></script>
+    <title>scroll page</title>
+</head>
+<body class="bg-gray-400">
+    <nav class="w-full fixed top-0 left-0 bg-blue-300">
+        <div id="progressbar" class="bg-red-500 w-0" style="height: 2px;"></div>
+        <div class="flex gap-10 p-3">
+            <span class="text-red-500" data-scroll="contact">contact</span>
+            <span data-scroll="about">about</span>
+            <span data-scroll="home">home</span>
+        </div>
+    </nav>
+
+    <div class="sections flex flex-col items-center justify-between">
+        <div class="my-10 p-10 bg-blue-300 w-4/5" style="height: 1000px;" id="contact">contact</div>
+        <div class="my-10 p-10 bg-blue-300 w-4/5" style="height: 1000px;" id="about">about</div>
+        <div class="my-10 p-10 bg-blue-300 w-4/5" style="height: 1000px;" id="home">home</div>
+    </div>
+
+    <button id="top" class="fixed bottom-10 right-10 bg-red-200 rounded p-2">top</button>
+</body>
+</html>

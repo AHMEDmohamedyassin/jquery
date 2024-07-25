@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../lib/tailwind.css" rel="stylesheet" />
+    <script defer src="../lib/jquery.js"></script>
+    <script defer src="./script.js"></script>
+    <title>popup</title>
+</head>
+<body class="bg-gray-400 p-10">
+    <button class="popupOpen border-gray-300 border-2 outline-none px-4 py-1 rounded bg-gray-300 text-purple-700 relative">popup</button>
+
+    <div style="background-color: rgba(0 , 0 , 0 , 0.3);" class="hidden popupContainer fixed top-0 left-0 w-full h-full flex items-center justify-center">
+        <div class="hidden popupCard w-3/4 bg-gray-400 h-48 rounded relative">
+            <p class="text-justify px-4 py-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio reiciendis impedit cum dolor modi deserunt possimus accusamus. Porro ipsa praesentium fugit qui hic accusantium aspernatur, sit odio, sunt exercitationem optio!</p>
+            <button class="popupClose absolute bottom-3 right-5 border-gray-200 border-2 px-4 py-1 rounded bg-gray-300 text-purple-700">cancel</button>
+        </div>
+    </div>
+</body>
+</html>
